@@ -188,8 +188,22 @@ export default function ParentDataSection({ data, errors, onChange }: ParentData
             Pembayaran SPP dapat dilakukan melalui transfer bank ke rekening berikut:
           </p>
           <ul className="list-disc list-inside text-sm text-emerald-700 mt-2 space-y-1">
-            <li>Bank Syariah Indonesia (BSI): <strong>1234567890</strong> a.n. Pesantren</li>
-            <li>Bank Muamalat: <strong>0987654321</strong> a.n. Pesantren</li>
+            <ul className="list-disc list-inside text-sm text-emerald-700 mt-2 space-y-1">
+  <li>
+    Bank Jawa Timur (BJT): 
+    <strong 
+      className="cursor-pointer hover:underline decoration-dotted" 
+      onClick={() => {
+        navigator.clipboard.writeText("6112003337");
+        alert("Nomor rekening disalin!");
+      }}
+      title="Klik untuk salin"
+    >
+      6112003337
+      </strong> 
+       Yayasan Ar-Risalah
+  </li>
+</ul>
           </ul>
           <p className="text-sm text-emerald-700 mt-2">
             Harap simpan bukti transfer untuk verifikasi pembayaran.
