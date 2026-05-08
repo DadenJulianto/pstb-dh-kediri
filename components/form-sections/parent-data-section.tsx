@@ -163,7 +163,7 @@ export default function ParentDataSection({ data, errors, onChange }: ParentData
       {/* SPP Commitment */}
       <div>
         <Label htmlFor="komitmen_spp" className="text-sm font-semibold text-gray-700 mb-2 block">
-          Komitmen SPP <span className="text-red-600">*</span>
+          Komitmen Infaq Bulanan <span className="text-red-600">*</span>
         </Label>
         <select
           id="komitmen_spp"
@@ -171,9 +171,11 @@ export default function ParentDataSection({ data, errors, onChange }: ParentData
           onChange={(e) => onChange('komitmen_spp', e.target.value)}
           className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 ${errors.komitmen_spp ? 'border-red-500' : 'border-gray-300'}`}
         >
-          <option value="">Pilih Komitmen SPP</option>
-          <option value="penuh">Penuh</option>
-          <option value="keringanan">Keringanan</option>
+          <option value="">Pilih Komitmen Infaq</option>
+          <option value="mandiri">Mandiri</option>
+          <option value="beasiswa-berprestasi">Beasiswa Berprestasi</option>
+          <option value="beasiswa-yatim-piatu">Beasiswa Yatim-Piatu</option>
+
         </select>
         {errors.komitmen_spp && (
           <p className="text-red-500 text-sm mt-1">{errors.komitmen_spp}</p>
@@ -191,6 +193,20 @@ export default function ParentDataSection({ data, errors, onChange }: ParentData
           </ul>
           <p className="text-sm text-emerald-700 mt-2">
             Harap simpan bukti transfer untuk verifikasi pembayaran.
+          </p>
+        </div>
+        {/* Informasi infaq pendidikan */}
+        <div className="mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
+          <h4 className="text-sm font-semibold text-emerald-800 mb-2">Informasi Infq Pendidikan</h4>
+          
+          <ol className="list-decimal list-inside text-sm text-emerald-700 mt-2 space-y-1">
+            <li>Beasiswa Prestasi - Potongan infaq pendidikan hingga <strong>50%</strong></li>
+            <li>Beasiswa keluarga pra sejahtera - Potongan infaq pendidikan hingga <strong>100%</strong></li>
+            <li>Beasiswa Yatim dan Piatu - Gratis infaq pendidikan </li>
+
+          </ol>
+          <p className="text-sm text-emerald-700 mt-2">
+            <strong>Note </strong> : syarat dan ketentuan berlaku
           </p>
         </div>
       </div>
