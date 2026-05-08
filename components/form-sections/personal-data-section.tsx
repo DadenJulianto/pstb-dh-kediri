@@ -140,8 +140,8 @@ export default function PersonalDataSection({
             className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.jenjang ? 'border-red-500' : 'border-gray-300'}`}
           >
             <option value="">Pilih Jenjang</option>
-            <option value="SMP">SMP</option>
-            <option value="SMA">SMA</option>
+            <option value="putra">SMP/MTS Putra</option>
+            <option value="putri">SMP/Putri</option>
           </select>
           {errors.jenjang && <p className="text-red-500 text-sm mt-1">{errors.jenjang}</p>}
         </div>
