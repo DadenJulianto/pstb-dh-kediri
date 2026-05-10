@@ -163,7 +163,7 @@ export default function ParentDataSection({ data, errors, onChange }: ParentData
       {/* SPP Commitment */}
       <div>
         <Label htmlFor="komitmen_spp" className="text-sm font-semibold text-gray-700 mb-2 block">
-          Komitmen Infaq Bulanan <span className="text-red-600">*</span>
+          Komitmen Infaq Pendidikan <span className="text-red-600">*</span>
         </Label>
         <select
           id="komitmen_spp"
