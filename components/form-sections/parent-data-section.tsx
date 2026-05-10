@@ -185,7 +185,7 @@ export default function ParentDataSection({ data, errors, onChange }: ParentData
         <div className="mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
           <h4 className="text-sm font-semibold text-emerald-800 mb-2">Informasi Pembayaran</h4>
           <p className="text-sm text-emerald-700">
-            Pembayaran SPP dapat dilakukan melalui transfer bank ke rekening berikut:
+            Pembayaran pendaftaran : Rp. 100.000 dapat dilakukan melalui transfer bank ke rekening berikut:
           </p>
           <ul className="list-disc list-inside text-sm text-emerald-700 mt-2 space-y-1">
             <ul className="list-disc list-inside text-sm text-emerald-700 mt-2 space-y-1">
@@ -211,7 +211,7 @@ export default function ParentDataSection({ data, errors, onChange }: ParentData
         </div>
         {/* Informasi infaq pendidikan */}
         <div className="mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
-          <h4 className="text-sm font-semibold text-emerald-800 mb-2">Informasi Infq Pendidikan</h4>
+          <h4 className="text-sm font-semibold text-emerald-800 mb-2">Informasi Infaq Pendidikan</h4>
           
           <ol className="list-decimal list-inside text-sm text-emerald-700 mt-2 space-y-1">
             <li>Beasiswa Prestasi - Potongan infaq pendidikan hingga <strong>50%</strong></li>

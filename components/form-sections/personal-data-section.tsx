@@ -141,7 +141,7 @@ export default function PersonalDataSection({
           >
             <option value="">Pilih Jenjang</option>
             <option value="putra">SMP/MTS Putra</option>
-            <option value="putri">SMP/Putri</option>
+            <option value="putri">SMP/MTS Putri</option>
           </select>
           {errors.jenjang && <p className="text-red-500 text-sm mt-1">{errors.jenjang}</p>}
         </div>
