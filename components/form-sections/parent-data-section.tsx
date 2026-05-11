@@ -181,6 +181,20 @@ export default function ParentDataSection({ data, errors, onChange }: ParentData
           <p className="text-red-500 text-sm mt-1">{errors.komitmen_spp}</p>
         )}
 
+  {/* Informasi infaq pendidikan */}
+        <div className="mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
+          <h4 className="text-sm font-semibold text-emerald-800 mb-2">Informasi Infaq Pendidikan</h4>
+          
+          <ol className="list-decimal list-inside text-sm text-emerald-700 mt-2 space-y-1">
+            <li>Beasiswa Prestasi - Potongan infaq pendidikan hingga <strong>50%</strong></li>
+            <li>Beasiswa keluarga pra sejahtera - Potongan infaq pendidikan hingga <strong>100%</strong></li>
+            <li>Beasiswa Yatim dan Piatu - Gratis infaq pendidikan </li>
+
+          </ol>
+          <p className="text-sm text-emerald-700 mt-2">
+            <strong>Note </strong> : syarat dan ketentuan berlaku
+          </p>
+        </div>
         {/* Informasi Pembayaran */}
         <div className="mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
           <h4 className="text-sm font-semibold text-emerald-800 mb-2">Informasi Pembayaran</h4>
@@ -209,20 +223,7 @@ export default function ParentDataSection({ data, errors, onChange }: ParentData
             Harap simpan bukti transfer untuk verifikasi pembayaran.
           </p>
         </div>
-        {/* Informasi infaq pendidikan */}
-        <div className="mt-6 p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
-          <h4 className="text-sm font-semibold text-emerald-800 mb-2">Informasi Infaq Pendidikan</h4>
-          
-          <ol className="list-decimal list-inside text-sm text-emerald-700 mt-2 space-y-1">
-            <li>Beasiswa Prestasi - Potongan infaq pendidikan hingga <strong>50%</strong></li>
-            <li>Beasiswa keluarga pra sejahtera - Potongan infaq pendidikan hingga <strong>100%</strong></li>
-            <li>Beasiswa Yatim dan Piatu - Gratis infaq pendidikan </li>
-
-          </ol>
-          <p className="text-sm text-emerald-700 mt-2">
-            <strong>Note </strong> : syarat dan ketentuan berlaku
-          </p>
-        </div>
+      
       </div>
     </div>
   )
